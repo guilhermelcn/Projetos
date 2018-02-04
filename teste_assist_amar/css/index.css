@@ -1,0 +1,15 @@
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.invisivel {
+	display: none;
+}
+
+#title{
+
+	margin-top: 8%;
+}

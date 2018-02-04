@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="author" content="Guilherme - Lucio">
+		<title>Amar Assist</title>
+		<link rel="icon" href="images/logo_amar.png">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<header>
+				
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      </button>
+	            <a class="brand pull-left"><img src="images/logo_amar.png" width="60" /></a>
+	            <div class="navbar-header">
+	            </div>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	            <ul class="nav navbar-nav">
+	                <li><a  href=####>Usuários</a></li>
+	                
+	            </ul>
+	            <div class="navbar-right">
+	                <a class="navbar-brand" href="#####">Sair</a>
+	       
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+	</nav>
+				
+			</div>
+		</header>
+
+			<div class="container theme-showcase" role="main">
+				<div class="page-header">
+						<h1 id='title' >Usuários</h1>
+				<div/>
+					<input class='form-control'type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do usuário">
+					</div>
+					<table class="table table-striped table-responsive">
+						<thead>
+							<tr>
+								<th>Nome</th>
+								<th>Nivel de Acesso</th>
+								<th>Situação</th>	
+							</tr>
+						</thead>
+						<tbody id="tabela-usuarios">
+							<tr class="usuario" id="primeiro-usuario">
+								<td class="info-nome">Guilherme</td>
+								<td class="info-nivel">Adiministrador</td>
+								<td class="info-ativo">Ativo</td>
+							</tr>
+							<tr class="usuario">
+								<td class="info-nome">Joao</td>
+								<td class="info-nivel">Adiministrador</td>
+								<td class="info-ativo">Inativo</td>
+							</tr>
+
+							<tr class="usuario" >
+								<td class="info-nome">Maria</td>
+								<td class="info-nivel">Padrão</td>
+								<td class="info-ativo">Inativo</td>
+							</tr>
+
+							<tr class="usuario">
+								<td class="info-nome">Jessica</td>
+								<td class="info-nivel">Padrão</td>
+								<td class="info-ativo">Ativo</td>
+
+							</tr>
+							<tr class="usuario" >
+								<td class="info-nome">Tatiana</td>
+								<td class="info-nivel">Padrão</td>
+								<td class="info-ativo">Ativo</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo usuário</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona" class='form-horizontal'>
+		       
+		            <label for="nome">Nome:</label>
+		            <input class='form-control'id="nome" name="nome" type="text" placeholder="Digite o nome do usuário" >
+		       
+		       
+		            <label for="nivel">Nivel de Acesso:</label>
+		            <input  class='form-control'id="nivel" name="nivel" type="text" placeholder="digite o Nivel de Acesso do usuário">
+		        
+		            <label for="situacao">Situação:</label>
+		            <input class='form-control'd="situacao" name="situacao" type="text" placeholder="digite a Situação do usuario">
+		       	
+
+		        <button id="adicionar-usuario" class="btn btn-success">Adicionar</button>
+		    </form>
+		</section>
+
+
+		<script src="js/form.js" ></script>
+		<script src="js/remover-usuarios.js" ></script>
+		<script src="js/filtra.js" ></script>
+
+	</body>
+</html>
